@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  color : #fff;
+}
+body{
+  background-color: #111;
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+#no::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
