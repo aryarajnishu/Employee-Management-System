@@ -36,7 +36,7 @@ const NewTask = ({data}) => {
 
       {/* Action Buttons */}
       <div className="absolute bottom-4 left-4 right-4 flex justify-center gap-4 items-center">
-        <button className="bg-green-600 hover:bg-green-700 text-sm text-white px-3 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px] hover:translate-x-[-2px] hover:rotate-[-2deg] hover:shadow-green-400">
+        <button className="bg-yellow-600 hover:bg-yellow-700 text-sm text-white px-3 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px] hover:translate-x-[-2px] hover:rotate-[-2deg] hover:shadow-green-400">
           Acepted
         </button>
       </div>
