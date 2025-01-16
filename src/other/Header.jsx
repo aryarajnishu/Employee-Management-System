@@ -3,16 +3,15 @@ import React , {useState} from 'react'
 
 function Header(props) {
 
-   
-  const data = props.data.firstName
-  console.log(data);
-  // const [Username, setUsername] = useState('')
+  // const data = props.data.firstName
+  // console.log(data);
+  // // const [Username, setUsername] = useState('')
 
-  // if(!data){
-  //   setUsername('Admin')
-  // }else{
-  //   setUsername(data.firstName)
-  // }
+  // // if(!data){
+  // //   setUsername('Admin')
+  // // }else{
+  // //   setUsername(data.firstName)
+  // // }
 
   const logOutUser = ()=>{
     localStorage.setItem('loggedInUser' , '')
@@ -28,7 +27,7 @@ function Header(props) {
     <div className="flex items-center justify-between bg-gradient-to-r from-gray-800 to-black p-6 rounded-xl shadow-xl mb-6">
       <h1 className="text-2xl font-medium text-white ml-10">
         Hello <br />
-        <span className="text-3xl font-semibold text-yellow-300">{data} 👋</span>
+        <span className="text-3xl font-semibold text-yellow-300">user 👋</span>
       </h1>
       <button
         onClick={logOutUser}
