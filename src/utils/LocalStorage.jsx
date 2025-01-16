@@ -7,7 +7,7 @@ const employees = [
         "password": "123",
         "taskCounts": {
             "active": 2,
-            "newTask": 1,
+            "newTask": 2,
             "completed": 1,
             "failed": 0
         },
@@ -41,6 +41,16 @@ const employees = [
                 "taskDescription": "Resolve bugs reported in issue tracker",
                 "taskDate": "2024-10-14",
                 "category": "Development"
+            },
+            {
+                "active": false,
+                "newTask": true,
+                "completed": false,
+                "failed": false,
+                "taskTitle": "Update website on clink",
+                "taskDescription": "Revamp the average homepage design",
+                "taskDate": "2024-10-11",
+                "category": "Design Dev" 
             }
         ]
     },
@@ -206,6 +216,7 @@ const employees = [
 const admin = [{
     "id": 1,
     "email": "admin@example.com",
+    "firstName": "Admin",
     "password": "123"
 }];
 

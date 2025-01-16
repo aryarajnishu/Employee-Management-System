@@ -22,6 +22,7 @@ const CreateTask = () => {
     // console.log(data)
 
     const data = userData;
+    // console.log(data)
 
     data.forEach(function(elem) {
       if(asignTo == elem.firstName){
@@ -31,6 +32,7 @@ const CreateTask = () => {
     });
 
     setUserData(data)
+    localStorage.setItem('employees', JSON.stringify(data));
     console.log(data)
 
     setTaskTitle('')

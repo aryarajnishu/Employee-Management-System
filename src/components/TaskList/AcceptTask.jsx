@@ -1,7 +1,7 @@
 import React from 'react'
 
 const AcceptTask = ({data}) => {
-  console.log(data);
+  // console.log(data);
 
   return (
     // <div className="flex-shrink-0 h-full w-[270px] bg-gray-800 rounded-xl py-2 px-2">
@@ -17,7 +17,7 @@ const AcceptTask = ({data}) => {
     //         <button className='bg-red-600 px-2 py-1 text-sm rounded-lg mt-5'>Mark as Failed</button>
     //     </div>
     //   </div>
-    <div className="flex-shrink-0 h-full w-[270px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl py-4 px-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
+    <div className="relative flex-shrink-0 h-full w-[270px] bg-gradient-to-br from-gray-800 to-gray-900 rounded-xl py-4 px-4 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-transform duration-300">
       {/* Header Section */}
       <div className="flex justify-between items-center">
         <h3 className="bg-red-600 text-xs px-3 py-1 rounded-full font-semibold text-white uppercase">
@@ -37,15 +37,17 @@ const AcceptTask = ({data}) => {
       </p>
 
       {/* Action Buttons */}
-      <div className="flex justify-between items-center mt-6">
-        <button className="bg-green-600 hover:bg-green-700 text-sm text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+      <div className="absolute bottom-4 left-4 right-4 flex justify-between gap-4 items-center">
+        <button className="bg-green-600 hover:bg-green-700 text-sm text-white px-3 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px] hover:translate-x-[-2px] hover:rotate-[-2deg] hover:shadow-green-400">
           Mark as Completed
         </button>
-        <button className="bg-red-500 hover:bg-red-600 text-sm text-white px-4 py-2 rounded-lg shadow-md hover:shadow-lg transition-all duration-300">
+        <button className="bg-red-500 hover:bg-red-600 text-sm text-white px-3 py-2 rounded-lg shadow-md transition-all duration-300 hover:shadow-lg transform hover:translate-y-[-2px] hover:translate-x-[2px] hover:rotate-[2deg] hover:shadow-red-400">
           Mark as Failed
         </button>
       </div>
     </div>
+
+
 
 
   )

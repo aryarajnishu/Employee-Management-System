@@ -19,7 +19,7 @@ function App() {
       setUser(userData.role)
       setLoggedInUserData(userData.data)
     }
-  },[])  
+  },[])
 
 
   const handleLogin = (email , password) =>{

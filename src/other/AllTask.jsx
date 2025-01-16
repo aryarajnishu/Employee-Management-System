@@ -32,32 +32,44 @@ const AllTask = () => {
         
     // </div>
 
-    <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-lg mt-6 shadow-xl">
-      {/* Header Row */}
-      <div className="bg-gradient-to-r from-red-500 to-red-600 mb-4 py-3 px-5 flex justify-between rounded-lg shadow-lg">
-        <h2 className="text-lg font-semibold text-white w-1/5">Employee Name</h2>
-        <h3 className="text-lg font-semibold text-white w-1/5">New Task</h3>
-        <h5 className="text-lg font-semibold text-white w-1/5">Active Task</h5>
-        <h5 className="text-lg font-semibold text-white w-1/5">Completed</h5>
-        <h5 className="text-lg font-semibold text-white w-1/5">Failed</h5>
-      </div>
-
-      {/* Employee Rows */}
-      <div>
-        {userData.map((elem, idx) => (
-          <div
-            key={idx}
-            className="bg-gradient-to-r from-gray-800 via-gray-900 to-gray-800 border-2 border-emerald-500 mb-3 py-3 px-5 flex justify-between rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-300"
-          >
-            <h2 className="text-lg font-medium text-emerald-400 w-1/5">{elem.firstName}</h2>
-            <h3 className="text-lg font-medium text-blue-400 w-1/5">{elem.taskCounts.newTask}</h3>
-            <h5 className="text-lg font-medium text-yellow-400 w-1/5">{elem.taskCounts.active}</h5>
-            <h5 className="text-lg font-medium text-green-400 w-1/5">{elem.taskCounts.completed}</h5>
-            <h5 className="text-lg font-medium text-red-500 w-1/5">{elem.taskCounts.failed}</h5>
-          </div>
-        ))}
-      </div>
+  <div className="bg-gradient-to-br from-black via-gray-900 to-black p-8 rounded-lg mt-8 shadow-2xl">
+    {/* Header Row */}
+    <div className="bg-gradient-to-r from-gray-800 via-gray-700 to-gray-800 mb-6 py-4 px-6 flex justify-between rounded-lg shadow-md border border-gray-600">
+      <h2 className="text-lg font-bold text-white w-1/5 tracking-wide">Employee Name</h2>
+      <h3 className="text-lg font-bold text-white w-1/5 tracking-wide">New Task</h3>
+      <h5 className="text-lg font-bold text-white w-1/5 tracking-wide">Active Task</h5>
+      <h5 className="text-lg font-bold text-white w-1/5 tracking-wide">Completed</h5>
+      <h5 className="text-lg font-bold text-white w-1/5 tracking-wide">Failed</h5>
     </div>
+
+    {/* Employee Rows */}
+    <div>
+      {userData.map((elem, idx) => (
+        <div
+          key={idx}
+          className="bg-gradient-to-r from-black via-gray-800 to-black border border-gray-700 mb-4 py-4 px-6 flex justify-between rounded-lg shadow-lg transform hover:scale-105 hover:shadow-2xl transition-all duration-500 group"
+        >
+          <h2 className="text-lg font-semibold text-gray-300 w-1/5 group-hover:text-white transition-colors duration-300">
+            {elem.firstName}
+          </h2>
+          <h3 className="text-lg font-semibold text-cyan-400 w-1/5 group-hover:text-white transition-colors duration-300">
+            {elem.taskCounts.newTask}
+          </h3>
+          <h5 className="text-lg font-semibold text-yellow-400 w-1/5 group-hover:text-white transition-colors duration-300">
+            {elem.taskCounts.active}
+          </h5>
+          <h5 className="text-lg font-semibold text-green-400 w-1/5 group-hover:text-white transition-colors duration-300">
+            {elem.taskCounts.completed}
+          </h5>
+          <h5 className="text-lg font-semibold text-red-500 w-1/5 group-hover:text-white transition-colors duration-300">
+            {elem.taskCounts.failed}
+          </h5>
+        </div>
+      ))}
+    </div>
+  </div>
+
+
 
   )
 }
