@@ -9,7 +9,6 @@ function AdminDashboard(props) {
         <Header changeUser={props.changeUser} data = {props.data}/>
         <CreateTask/>
         <AllTask/>
-
     </div>
   )
 }

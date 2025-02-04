@@ -16,7 +16,7 @@ function Login({handleLogin}) {
     }
   return (
     <div className='flex h-screen w-screen items-center justify-center'>
-        <div className='border-2 rounded-xl border-emerald-600 p-20'>
+        <div className='border-2 rounded-xl border-gray-600 p-20'>
             <form 
             onSubmit={(e) =>{
                 submitHandler(e);
@@ -28,15 +28,15 @@ function Login({handleLogin}) {
                     setemail(e.target.value)
                 }}
                 required 
-                className = 'outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter your email' />
+                className = 'outline-none bg-transparent border-2 border-gray-600 font-medium text-lg py-2 px-6 rounded-full placeholder:text-gray-400' type="email" placeholder='Enter your email' />
                 <input 
                 value={password}
                 onChange={(e)=>{
                     setpassword(e.target.value)
                 }}
                 required 
-                className = 'outline-none bg-transparent border-2 border-emerald-600 font-medium text-lg py-2 px-6 mt-8 rounded-full placeholder:text-gray-400' type="password" placeholder='Enter your password' />
-                <button className = 'outline-none  border-2 bg-emerald-600 font-medium text-lg py-2 px-6 rounded-full mt-8'>Log In</button>
+                className = 'outline-none bg-transparent border-2 border-gray-600 font-medium text-lg py-2 px-6 mt-8 rounded-full placeholder:text-gray-400' type="password" placeholder='Enter your password' />
+                <button className = 'outline-none  border-2 border-gray-600 font-medium text-lg py-2 px-6 rounded-full mt-8 bg-blue-400'>Log In</button>
             </form>
         </div>
     </div>
